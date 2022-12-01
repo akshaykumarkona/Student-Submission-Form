@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Submission Form</title>
+    <style>
+    body{background: rgba(72, 66, 66, 0.1);
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-size: 25px;
+    font-weight: normal;
+    font-style: normal;}
+    
+    #head_id{text-align:center}
+    .div-1{text-align: center;
+    height:500px;
+    margin: auto;
+    padding:20px 10px ;
+    max-width: 500px;
+    border:2px;
+    border-radius: 10px;
+    background:rgba(134, 124, 121, 0.296); 
+    /* width: 80%; */ 
+}
+    #sumbit_btn{
+        font-size: 19px;
+    }
+    #sumbit_btn:hover{cursor: pointer;}
+    </style>
+    
+</head>
+<body>
+    <script>
+         document.getElementById("sumbit_btn").addEventListener("onclick",pressing);
+
+//         function displayDate() {
+//   document.getElementById("demo").innerHTML = Date();
+// }
+
+function pressing(){
+    location.href="file:///C:/Users/aksha/OneDrive/Desktop/Front-End/HTML%20SANDBOX%20FLE1/Sumission%20status.html";
+    console.log("Form Submitted");
+} //src="jsfile1.js" 
+</script>
+    <header><h2 id="head_id" class="head_class">FORM SUBMISSION</h2></header>
+    <div class="div-1">
+         <form action="#">
+        <!-- "./doc.txt"> -->
+        <label for="Fullname" class="cls_name" id="id_name">Enter your Fullname</label>
+        <input type="text" id="Fullname" name="Fullname"><br><br>
+        <label for="E-mail">Enter your E-mail id</label>
+        <input type="email" id="E-mail" name="E-mail"><br><br>
+        <label for="mobile">Enter your Mobile no</label>
+        <input type="tel" id="mobile" name="mobile"><br><br>
+        <label for="dob">Enter your Date of Birth</label>
+        <input type="date" id="dob" name="dob"><br><br>
+        <label for="gender">Select your Gender</label><br>
+        <input type="radio" value="gender" name="Male">Male
+        <input type="radio" value="gender" name="Female">Female
+        <input type="radio" value="gender" name="Other">Other<br><br>
+        <input type="checkbox" id="chkbox">
+        <label for="checkbox" id="chkbox" name="chkbox">I confirm that above mentioned details are correct best of my knowlegde.</label><br><br>
+        <input type="submit" id="sumbit_btn">
+        <!-- <button onclick="displayDate()">Submit1</button> -->
+    </form>
+</div> 
+</body>
+</html>
