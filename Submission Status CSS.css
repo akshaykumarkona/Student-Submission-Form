@@ -1,0 +1,21 @@
+.body{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    
+}
+.div-1{
+    border:4px;
+    border-radius: 5px;
+    background: #578da37e;
+    font-size: 50px;
+    font-weight: 700;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    max-width: 600px;
+    margin: auto;
+    padding:30px;
+    position: absolute;
+    left: 30%;
+    top:30%;      
+}
